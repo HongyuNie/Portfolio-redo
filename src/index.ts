@@ -1,3 +1,4 @@
 import './AppRoot';
 import './components/Home/home-section';
-import './components/about-page';
+import './components/About/about-page';
+import './styles/tailwind.css';

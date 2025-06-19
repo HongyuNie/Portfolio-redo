@@ -2,6 +2,10 @@ import { LitElement, html, css } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { Router } from '@vaadin/router';
 import './components/nav-bar';
+import './components/About/about-page';
+import './styles/tailwind.css';
+
+
 
 @customElement('app-root')
 export class AppRoot extends LitElement {
@@ -40,9 +44,9 @@ export class AppRoot extends LitElement {
     const router = new Router(this.shadowRoot?.querySelector('#outlet'));
     router.setRoutes([
       { path: '/', component: 'home-page' },
-      { path: '/projects', component: 'projects-page' },
+      // { path: '/projects', component: 'projects-page' },
       { path: '/about', component: 'about-page' },
-      { path: '/resume', component: 'resume-page' },
+      // { path: '/resume', component: 'resume-page' },
       { path: '(.*)', redirect: '/' }
     ]);
     this.loading = false;
