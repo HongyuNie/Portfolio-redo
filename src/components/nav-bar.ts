@@ -131,7 +131,7 @@ export class NavBar extends LitElement {
             </a>
           </li>
           <li>
-            <a href="/project" class="nav-link" @click=${() => this.expand = false}>
+            <a href="/projects" class="nav-link" @click=${() => this.expand = false}>
               <span>💻</span> Projects
             </a>
           </li>

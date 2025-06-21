@@ -4,13 +4,15 @@ import '../../assets/home-main.svg';
 import './type-writer';
 import './home-section-two';
 
+import '../particle-background.ts';
+
 @customElement('home-page')
 export class Home extends LitElement {
   static styles = css`
     .home-section {
       position: relative;
       padding: 3rem 1rem;
-      background-color: #f8f9fa;
+      background-color:rgb(5, 7, 10);
     }
 
     .home-content {
@@ -84,7 +86,7 @@ export class Home extends LitElement {
     return html`
       <section>
         <div class="home-section" id="home">
-          <particle-effect></particle-effect>
+          <particle-background></particle-background>
 
           <div class="home-content">
             <div class="row">
