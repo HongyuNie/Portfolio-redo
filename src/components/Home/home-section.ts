@@ -85,9 +85,8 @@ export class Home extends LitElement {
   render() {
     return html`
       <section>
+        <particle-background></particle-background>
         <div class="home-section" id="home">
-          <particle-background></particle-background>
-
           <div class="home-content">
             <div class="row">
               <div class="col-md-7 home-header">
@@ -113,7 +112,6 @@ export class Home extends LitElement {
             </div>
           </div>
         </div>
-
         <home-section-two></home-section-two>
       </section>
     `;

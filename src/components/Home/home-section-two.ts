@@ -2,10 +2,12 @@ import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+import '../particle-background.ts';
+
 @customElement('home-section-two')
 export class HomeSectionTwo extends LitElement {
   static styles = css`
-    .container {
+    .container {a
       padding: 2rem;
       max-width: 1200px;
       margin: 0 auto;
@@ -82,6 +84,7 @@ export class HomeSectionTwo extends LitElement {
   render() {
     return html`
       <section class="container home-about-section" id="about">
+      <particle-background></particle-background>
         <div class="container">
           <div class="row">
             <div class="col home-about-description">

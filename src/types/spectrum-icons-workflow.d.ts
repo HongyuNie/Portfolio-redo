@@ -1,0 +1,1 @@
+declare module '@spectrum-web-components/icons-workflow/icons/sp-icon-workflow-home.js';
