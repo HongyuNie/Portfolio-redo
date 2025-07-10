@@ -41,7 +41,7 @@ export class HomeSectionTwo extends LitElement {
       line-height: 1.6;
     }
     .purple {
-      color: #6c63ff;
+      color: var(--imp-text-color) ;
     }
     .img-fluid {
       max-width: 100%;

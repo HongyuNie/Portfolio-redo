@@ -25,7 +25,7 @@ export class TypeWriter extends LitElement {
   #typewriter {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #6c63ff;
+    color: var(--imp-text-color) ;
   }
 `;
 

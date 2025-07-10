@@ -12,7 +12,12 @@ export class Home extends LitElement {
     .home-section {
       position: relative;
       padding: 3rem 1rem;
-      background-color:rgb(5, 7, 10);
+      background-color:rgb(90, 41, 154);
+      background-image: url('/src/assets/home-bg.jpg');
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     .home-content {
@@ -27,11 +32,18 @@ export class Home extends LitElement {
     .heading {
       font-size: 2rem;
       font-weight: bold;
+      padding-left: 30px;
+      color: white;
     }
 
-    .main-name {
-      color: #007bff;
-      margin-left: 0.5rem;
+    .heading-name {
+      font-size: 2.5em !important;
+      padding-left: 30px !important;
+      color: white;
+    }
+
+    .purple {
+      color: var(--imp-text-color) !important;
     }
 
     .img-fluid {
@@ -85,18 +97,18 @@ export class Home extends LitElement {
   render() {
     return html`
       <section>
-        <particle-background></particle-background>
         <div class="home-section" id="home">
+        <particle-background></particle-background>
           <div class="home-content">
             <div class="row">
               <div class="col-md-7 home-header">
-                <h1 class="heading" style="padding-bottom: 15px">
+                <h1 class="heading">
                   Hi There!
                   <span class="wave" role="img" aria-label="wave">👋🏻</span>
                 </h1>
 
                 <h1 class="heading-name">
-                  I'M <strong class="main-name">SOUMYAJIT BEHERA</strong>
+                  I'M <strong class="purple">SOUMYAJIT BEHERA</strong>
                 </h1>
 
                 <type-writer></type-writer>
